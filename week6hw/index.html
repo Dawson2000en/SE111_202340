@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Dawson Enright">
+<meta name="description" content="Week 6 Pay Calculator">
+<title>Week 6 | Calculator</title>
+
+
+
+<style>
+
+
+    Body{
+        background-color: blue;
+    }
+</style>
+
+
+
+
+
+
+</head>
+
+
+
+
+<body>
+   
+   <h1>Pay Calculator | Javascript<br>
+    Please Refresh To Use Again 
+   </h1>
+   
+   <script>
+
+
+      var num1 = Number(prompt(`What is Your Hourly Rate`))
+      var num2 = Number(prompt(`Please Enter Your Tax Rate As A Decimal Number`))
+      var num3 = Number(prompt(`Please Enter Your Hours Worked Over Two Weeks`))
+      var gpay = num1 * num3
+      var taxl = num2 * gpay
+      var npay = gpay - taxl
+
+
+      alert(`Your Pay Before Taxes Is ${gpay .toFixed(2)}\nYour Taxes Owed For This Pay Period Is ${taxl.toFixed(2)}\nYour Total Net Pay Is ${npay.toFixed(2)}\n`)
+
+
+
+      console.log(`Gross pay is \n${gpay .toFixed(2)}`)
+      console.log(`Taxes lost this pay period \n${taxl.toFixed(2)}`)
+      console.log(`Net pay is \n${npay.toFixed(2)}`)
+
+      
+
+   </script>
+
+</body>
+</html>
